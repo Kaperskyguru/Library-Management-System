@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="21e54b22-6b41-4a19-a662-e1e6cc03847c">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     bookdetails.`SN` AS bookdetails_SN,
+     bookdetails.`AccessionNo` AS bookdetails_AccessionNo,
+     bookdetails.`ISBNNo` AS bookdetails_ISBNNo,
+     bookdetails.`CL Accession` AS bookdetails_CL_Accession,
+     bookdetails.`BookTitle` AS bookdetails_BookTitle,
+     bookdetails.`Author Name` AS bookdetails_Author_Name,
+     bookdetails.`Edition` AS bookdetails_Edition,
+     bookdetails.`Book Self No` AS bookdetails_Book_Self_No,
+     bookdetails.`Row No` AS bookdetails_Row_No,
+     bookdetails.`Column No` AS bookdetails_Column_No
+FROM
+     `bookdetails` bookdetails]]>
+	</queryString>
+	<field name="bookdetails_SN" class="java.lang.Integer"/>
+	<field name="bookdetails_AccessionNo" class="java.lang.String"/>
+	<field name="bookdetails_ISBNNo" class="java.lang.String"/>
+	<field name="bookdetails_CL_Accession" class="java.lang.String"/>
+	<field name="bookdetails_BookTitle" class="java.lang.String"/>
+	<field name="bookdetails_Author_Name" class="java.lang.String"/>
+	<field name="bookdetails_Edition" class="java.lang.String"/>
+	<field name="bookdetails_Book_Self_No" class="java.lang.String"/>
+	<field name="bookdetails_Row_No" class="java.lang.String"/>
+	<field name="bookdetails_Column_No" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
